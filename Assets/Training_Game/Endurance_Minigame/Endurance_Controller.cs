@@ -26,7 +26,7 @@ public class Endurance_Controller : MonoBehaviour
         m_SpriteRenderer.color = m_NewColor;
     }
 
-    private void Update() {
+    private void FixedUpdate() {
 
         var movement = direction;
         animator.SetFloat("Speed", Mathf.Abs(movement));
